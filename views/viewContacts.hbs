@@ -1,0 +1,27 @@
+<div class="row">
+    <h3 class="col-md-10" style="text-align: center;">Contacts</h3>
+    <a  class="col-md-1" href="add">
+            <i class="fa fa-user-plus" aria-hidden="true" style='font-size:30px;margin-left: auto;'></i>      
+    </a> 
+    <a  class="col-md-1" href="groups">
+        <i class="fa fa-users" aria-hidden="true" style='font-size:30px;margin-left: auto;'></i>
+    </a>
+</div>
+
+    <ul class="list-group">
+    {{#each contacts}}
+   
+    <li class="list-group-item">
+         <div class="row">
+        <a href ='view/{{this._id}}' class="col-md-10">{{this.name}} </a>
+        <a href="/update/{{this.id}}" class="col-md-1">
+            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="/delete/{{this.id}}" class="col-md-1">
+            <i class="fa fa-trash fa-lg" aria-hidden="true" ></i>
+        </a>
+         </div>
+    </li>
+   
+    {{/each}}
+    </ul>

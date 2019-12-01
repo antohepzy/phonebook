@@ -1,0 +1,12 @@
+ <h3>Groups</h3>
+ <ul class="list-group">
+    {{#each groups}}
+   
+    <li class="list-group-item">
+        <a href ='groupContacts/{{this._id}}' class="col-md-10">{{this.group}}</a>
+    </li>
+
+    {{/each}}
+</ul>
+
+<a class="btn btn-info" href="/newGroup" style="margin-top:20px;">New Group</a>

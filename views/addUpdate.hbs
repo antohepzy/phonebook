@@ -1,0 +1,25 @@
+<h3>{{title}}</h3>
+
+<form action="/contact" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value={{contact._id}}>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Name" value={{contact.name}}>
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="text" class="form-control" name="phone" placeholder="Phone" value={{contact.phone}}>
+    </div>
+    <div class="form-group">
+        <label>Work</label>
+        <input type="text" class="form-control" name="work" placeholder="Work" value={{contact.work}}>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" placeholder="Email" value={{contact.email}}>
+    </div>
+    <div class="form-group">
+        <button type="submit" style="display:{{type}}" class="btn btn-info">{{title}}</button>
+        <a class="btn btn-secondary" href="/">View All</a>
+    </div>
+</form>

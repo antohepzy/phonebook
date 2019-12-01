@@ -1,0 +1,21 @@
+<h3>{{title}}</h3>
+
+<form action="/newGroup" method="POST" autocomplete="off">
+    <div class="form-group">
+        <label>Group Name</label>
+        <input type="text" class="form-control" name="group" placeholder="Name">
+    </div>
+
+    {{#each contacts}}
+    <div class="form-check">
+        <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="contacts" value={{this.name}}>{{this.name}}
+        </label>
+    </div>
+    {{/each}}
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info">ADD</button>
+        <a class="btn btn-secondary" href="/groups">View All</a>
+    </div>
+</form>
