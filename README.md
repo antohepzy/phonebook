@@ -1,6 +1,6 @@
 # phonebook
 #
-install node modules
+Please install node modules 
 
 #
 npm start to start project
